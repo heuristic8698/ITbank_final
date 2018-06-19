@@ -1,0 +1,40 @@
+Jun 19 10:22:27.854 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jun 19 10:22:27.870 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 7207.
+Jun 19 10:22:28.280 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 19 10:22:28.280 HYPERVISOR: exec_cmd: hypervisor uuid 
+Jun 19 10:22:28.280 HYPERVISOR: exec_cmd: hypervisor working_dir H:/GNS/Projects/SoulWorker/untitled/untitled-files\dynamips 
+Jun 19 10:22:28.280 GENERAL: working_dir=H:/GNS/Projects/SoulWorker/untitled/untitled-files\dynamips
+Jun 19 10:22:28.284 HYPERVISOR: exec_cmd: vm create ESW6 8 c3600 
+Jun 19 10:22:28.284 VM: VM ESW6 created.
+Jun 19 10:22:28.284 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW6 2008 
+Jun 19 10:22:28.284 HYPERVISOR: exec_cmd: vm set_aux_tcp_port ESW6 2508 
+Jun 19 10:22:28.288 HYPERVISOR: exec_cmd: c3600 get_mac_addr ESW6 
+Jun 19 10:22:28.288 HYPERVISOR: exec_cmd: c3600 set_chassis ESW6 3660 
+Jun 19 10:22:28.288 HYPERVISOR: exec_cmd: vm set_ram ESW6 256 
+Jun 19 10:22:28.288 HYPERVISOR: exec_cmd: vm set_ios ESW6 H:/GNS/Images/IOS/c3660-a3jk9s-mz.124-15.T9.image 
+Jun 19 10:22:28.288 HYPERVISOR: exec_cmd: vm set_sparse_mem ESW6 1 
+Jun 19 10:22:28.288 HYPERVISOR: exec_cmd: vm set_ram_mmap ESW6 1 
+Jun 19 10:22:28.288 HYPERVISOR: exec_cmd: c3600 set_mac_addr ESW6 cc08.20d4.0000 
+Jun 19 10:22:28.288 HYPERVISOR: exec_cmd: vm set_ghost_status ESW6 2 
+Jun 19 10:22:28.292 HYPERVISOR: exec_cmd: vm set_ghost_file ESW6 c3660-a3jk9s-mz.124-15.T9.image-256.ghost 
+Jun 19 10:22:39.180 HYPERVISOR: exec_cmd: vm set_config ESW6 configs/i8_startup-config.cfg 
+Jun 19 10:22:39.180 HYPERVISOR: exec_cmd: vm set_config ESW6 configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jun 19 10:22:39.180 HYPERVISOR: exec_cmd: vm set_nvram ESW6 256 
+Jun 19 10:22:39.180 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Jun 19 10:22:39.180 HYPERVISOR: exec_cmd: vm set_idle_pc ESW6 0x60637218 
+Jun 19 10:22:39.180 HYPERVISOR: exec_cmd: vm set_disk0 ESW6 1 
+Jun 19 10:22:39.180 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Jun 19 10:22:39.180 HYPERVISOR: exec_cmd: vm slot_add_binding ESW6 1 0 NM-16ESW 
+Jun 19 10:22:39.180 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Jun 19 10:22:39.758 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto15 127.0.0.1 10001 20000 
+Jun 19 10:22:40.492 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto15 127.0.0.1 10015 
+Jun 19 10:22:40.492 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW6 1 15 nio_udp_auto15 
+Jun 19 10:22:40.492 HYPERVISOR: exec_cmd: vm get_status ESW6 
+Jun 19 12:28:41.423 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Jun 19 12:28:51.423 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Jun 19 13:55:59.457 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Jun 19 15:16:47.047 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Jun 19 15:17:14.961 HYPERVISOR: exec_cmd: vm extract_config ESW6 
+Jun 19 15:17:15.287 HYPERVISOR: Stopped.
+Jun 19 15:17:15.287 VM: VM ESW6 destroyed.
+Jun 19 15:17:15.327 GENERAL: reset done.

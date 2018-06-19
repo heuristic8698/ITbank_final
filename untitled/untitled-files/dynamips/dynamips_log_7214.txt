@@ -1,0 +1,108 @@
+Jun 13 10:26:33.182 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jun 13 10:26:33.185 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 7214.
+Jun 13 10:26:33.613 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 10:26:33.614 HYPERVISOR: exec_cmd: hypervisor uuid 
+Jun 13 10:26:33.614 HYPERVISOR: exec_cmd: hypervisor working_dir H:\GNS\Temp\gns3-__lz64-files\dynamips 
+Jun 13 10:26:33.615 GENERAL: working_dir=H:\GNS\Temp\gns3-__lz64-files\dynamips
+Jun 13 10:26:33.616 HYPERVISOR: exec_cmd: vm create R4 14 c3600 
+Jun 13 10:26:33.619 VM: VM R4 created.
+Jun 13 10:26:33.620 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 2014 
+Jun 13 10:26:33.620 HYPERVISOR: exec_cmd: vm set_aux_tcp_port R4 2514 
+Jun 13 10:26:33.621 HYPERVISOR: exec_cmd: c3600 get_mac_addr R4 
+Jun 13 10:26:33.622 HYPERVISOR: exec_cmd: c3600 set_chassis R4 3660 
+Jun 13 10:26:33.622 HYPERVISOR: exec_cmd: vm set_ram R4 256 
+Jun 13 10:26:33.623 HYPERVISOR: exec_cmd: vm set_ios R4 H:/GNS/Images/IOS/c3660-a3jk9s-mz.124-15.T9.image 
+Jun 13 10:26:33.623 HYPERVISOR: exec_cmd: vm set_sparse_mem R4 1 
+Jun 13 10:26:33.624 HYPERVISOR: exec_cmd: vm set_ram_mmap R4 1 
+Jun 13 10:26:33.624 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Jun 13 10:26:33.625 HYPERVISOR: exec_cmd: vm set_ghost_file R4 c3660-a3jk9s-mz.124-15.T9.image-256.ghost 
+Jun 13 10:26:33.681 HYPERVISOR: exec_cmd: vm set_config R4 configs\i14_startup-config.cfg 
+Jun 13 10:26:33.687 HYPERVISOR: exec_cmd: vm set_config R4 configs\i14_startup-config.cfg configs\i14_private-config.cfg 
+Jun 13 10:26:33.687 HYPERVISOR: exec_cmd: vm set_disk0 R4 1 
+Jun 13 10:26:33.687 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:26:33.688 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60637218 
+Jun 13 10:26:33.688 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Jun 13 10:26:46.997 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:26:46.997 HYPERVISOR: exec_cmd: vm slot_add_binding R4 6 0 NM-1FE-TX 
+Jun 13 10:26:46.998 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:26:46.998 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:26:46.999 HYPERVISOR: exec_cmd: vm slot_add_binding R4 4 0 NM-1FE-TX 
+Jun 13 10:26:46.999 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:26:47.000 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:26:47.000 HYPERVISOR: exec_cmd: vm slot_add_binding R4 5 0 NM-1FE-TX 
+Jun 13 10:26:47.000 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:26:47.001 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:26:47.001 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 NM-1FE-TX 
+Jun 13 10:26:47.002 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:26:47.002 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:26:47.003 HYPERVISOR: exec_cmd: vm slot_add_binding R4 3 0 NM-1FE-TX 
+Jun 13 10:26:47.003 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:26:47.003 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:26:47.004 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 NM-1FE-TX 
+Jun 13 10:26:47.004 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:27:02.586 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto9 127.0.0.1 10001 20000 
+Jun 13 10:27:02.653 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto9 127.0.0.1 10009 
+Jun 13 10:27:02.654 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 nio_udp_auto9 
+Jun 13 10:27:02.655 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:27:05.774 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto10 127.0.0.1 10001 20000 
+Jun 13 10:27:05.819 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto10 127.0.0.1 10012 
+Jun 13 10:27:05.820 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 1 nio_udp_auto10 
+Jun 13 10:27:05.820 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:27:08.260 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto12 127.0.0.1 10001 20000 
+Jun 13 10:27:08.318 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto12 127.0.0.1 10014 
+Jun 13 10:27:08.319 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 0 nio_udp_auto12 
+Jun 13 10:27:08.319 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:27:10.731 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto14 127.0.0.1 10001 20000 
+Jun 13 10:27:10.780 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto14 127.0.0.1 10016 
+Jun 13 10:27:10.780 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 2 0 nio_udp_auto14 
+Jun 13 10:27:10.781 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:27:13.390 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto16 127.0.0.1 10001 20000 
+Jun 13 10:27:13.442 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto16 127.0.0.1 10018 
+Jun 13 10:27:13.443 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 3 0 nio_udp_auto16 
+Jun 13 10:27:13.443 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:27:16.089 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto18 127.0.0.1 10001 20000 
+Jun 13 10:27:16.136 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto18 127.0.0.1 10020 
+Jun 13 10:27:16.137 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 4 0 nio_udp_auto18 
+Jun 13 10:27:16.137 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:27:19.742 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto20 127.0.0.1 10001 20000 
+Jun 13 10:27:19.788 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto20 127.0.0.1 10022 
+Jun 13 10:27:19.789 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 5 0 nio_udp_auto20 
+Jun 13 10:27:19.789 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:30:09.641 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:30:09.642 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R4 0 0 
+Jun 13 10:30:09.642 HYPERVISOR: exec_cmd: nio delete nio_udp_auto9 
+Jun 13 10:30:25.763 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto25 127.0.0.1 10001 20000 
+Jun 13 10:30:25.833 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto25 127.0.0.1 10009 
+Jun 13 10:30:25.834 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 nio_udp_auto25 
+Jun 13 10:30:25.834 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:30:39.600 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:30:39.601 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R4 0 0 
+Jun 13 10:30:39.601 HYPERVISOR: exec_cmd: nio delete nio_udp_auto25 
+Jun 13 10:30:55.771 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto27 127.0.0.1 10001 20000 
+Jun 13 10:30:55.850 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto27 127.0.0.1 10009 
+Jun 13 10:30:55.851 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 nio_udp_auto27 
+Jun 13 10:30:55.851 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:32:05.982 HYPERVISOR: exec_cmd: hypervisor working_dir H:/GNS/Projects/SoulWorker/untitled\untitled-files\dynamips 
+Jun 13 10:32:05.982 GENERAL: working_dir=H:/GNS/Projects/SoulWorker/untitled\untitled-files\dynamips
+Jun 13 10:32:07.434 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 13 10:32:52.105 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:32:52.106 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R4 0 0 
+Jun 13 10:32:52.106 HYPERVISOR: exec_cmd: nio delete nio_udp_auto27 
+Jun 13 10:32:56.384 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto29 127.0.0.1 10001 20000 
+Jun 13 10:32:56.458 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto29 127.0.0.1 10009 
+Jun 13 10:32:56.459 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 nio_udp_auto29 
+Jun 13 10:32:56.459 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:35:10.897 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 13 10:35:55.617 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 13 10:36:48.238 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:36:48.240 HYPERVISOR: exec_cmd: vm start R4 
+Jun 13 10:36:48.332 GHOST: loaded ghost image c3660-a3jk9s-mz.124-15.T9.image-256.ghost (fd=21) at addr=0xed350000 (size=0x10000000)
+Jun 13 10:36:48.332 GHOST: loaded image c3660-a3jk9s-mz.124-15.T9.image-256.ghost successfully.
+Jun 13 10:37:00.923 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 13 10:37:00.924 HYPERVISOR: exec_cmd: vm stop R4 
+Jun 13 10:37:01.116 GHOST: unloaded ghost image c3660-a3jk9s-mz.124-15.T9.image-256.ghost (fd=21) at addr=0xed350000 (size=0x10000000)
+Jun 13 10:37:01.195 VM: VM R4 shutdown.
+Jun 13 10:37:26.198 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 13 10:37:30.784 HYPERVISOR: Stopped.
+Jun 13 10:37:30.784 VM: VM R4 destroyed.
+Jun 13 10:37:30.874 GENERAL: reset done.
